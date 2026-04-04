@@ -1,0 +1,88 @@
+1. Project Overview 2. Problem Statement 3. Features 4. Tech Stack 5. System Architecture 6. Database Schema 7. API Structure 8. Installation Guide 9. Usage 10. Folder Structure
+11. Security Considerations
+12. Future Improvements
+
+You are a senior software architect and technical documentation expert.
+
+Create a complete and professional project documentation using the structure below.
+
+The documentation must be:
+
+* clear
+* structured
+* developer-friendly
+* suitable for GitHub README or software project documentation
+* detailed enough so that developers or AI coding agents can understand and implement the system
+
+Project Information:
+
+Project Name: [INSERT PROJECT NAME]
+
+Project Description:
+[Explain briefly what the application does]
+
+Target Users:
+[Example: students, teachers, administrators, customers, etc.]
+
+Main Purpose:
+[Explain the main goal of the application]
+
+Core Functionalities:
+[List the main capabilities of the system]
+
+Technology Preference:
+[List technologies if already decided, e.g. Laravel, Next.js, MySQL, etc.]
+
+Now generate a full documentation using the following sections:
+
+---
+
+1. Project Overview
+   Explain the application in a clear and concise way including purpose and scope.
+
+2. Problem Statement
+   Explain the problem that the application solves and why the system is needed.
+
+3. Features
+   List and explain the main features of the application.
+   Group them if necessary (Admin, User, etc.).
+
+4. Tech Stack
+   Explain the technologies used including:
+
+* Frontend
+* Backend
+* Database
+* Other tools or services
+
+5. System Architecture
+   Explain the system architecture and interaction between components.
+   Use simple diagrams if necessary.
+
+6. Database Schema
+   Describe the database structure including main tables and key fields.
+
+7. API Structure
+   List main API endpoints including method and description.
+
+8. Installation Guide
+   Explain step-by-step how to run the project locally.
+
+9. Usage
+   Explain how users interact with the system.
+
+10. Folder Structure
+    Provide a clean and logical folder structure for the project.
+
+11. Security Considerations
+    Explain security strategies including:
+
+* authentication
+* authorization
+* data validation
+* common web security protections
+
+12. Future Improvements
+    List possible future features and improvements for the system.
+
+Make the documentation detailed but clear and structured so it can be directly used for a real software project.

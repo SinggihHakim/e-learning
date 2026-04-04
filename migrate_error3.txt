@@ -1,0 +1,26 @@
+﻿
+   INFO  Running migrations.  
+
+  2026_03_10_153134_create_quiz_questions_table  4ms FAIL
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'quiz_questions' already exists (Connection: mysql, SQL: create table `quiz_questions` (`id` bigint unsigned not null auto_increment primary key, `quiz_id` bigint unsigned not null, `question_text` text not null, `type` enum('multiple_choice', 'essay') not null default 'multiple_choice', `points` int not null default '10', `created_at` timestamp null, `updated_at` timestamp null) default character set utf8mb4 collate 'utf8mb4_unicode_ci')
+
+  at vendor\laravel\framework\src\Illuminate\Database\Connection.php:829
+    825Γûò                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    826Γûò                 );
+    827Γûò             }
+    828Γûò 
+  Γ₧£ 829Γûò             throw new QueryException(
+    830Γûò                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    831Γûò             );
+    832Γûò         }
+    833Γûò     }
+
+  1   vendor\laravel\framework\src\Illuminate\Database\Connection.php:587
+      PDOException::("SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'quiz_questions' already exists")
+
+  2   vendor\laravel\framework\src\Illuminate\Database\Connection.php:587
+      PDOStatement::execute()
+
