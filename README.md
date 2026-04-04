@@ -1,84 +1,119 @@
-# 🎓 E-Learning Platform (LMS)
+# 🎓 E-Learning Platform (LMS) - Premium Laravel Edition 🚀
 
-A comprehensive Learning Management System (LMS) built with **Laravel 10**, designed to streamline the educational experience for Administrators, Teachers, and Students.
+![Status](https://img.shields.io/badge/Status-Active-success)
+![Laravel](https://img.shields.io/badge/Laravel-10-red)
+![PHP](https://img.shields.io/badge/PHP-8.1%2B-blue)
+![Tailwind](https://img.shields.io/badge/Tailwind-CSS-38B2AC)
+![License](https://img.shields.io/badge/License-MIT-green)
 
----
-
-## 🌟 Key Features
-
-### 👨‍💼 Administrator Portal
-- **User Management**: Complete CRUD operations for Users, Teachers, and Students.
-- **Data Export**: Export user data for administrative reporting.
-- **Course Oversight**: Monitor and manage all courses across the platform.
-
-### 👩‍🏫 Teacher Portal
-- **Course Management**: Create and manage courses, materials, and lessons.
-- **Interactive Learning**: Pin/Unpin comments on course materials for better engagement.
-- **Assessment Engine**: Create Quizzes and Assignments with automated or manual grading.
-- **Gradebook**: Comprehensive grade tracking with Excel/CSV export functionality.
-- **Leaderboard**: Real-time ranking based on student performance.
-- **Attendance**: Track student attendance for each session.
-
-### 👨‍🎓 Student Portal
-- **Course Enrollment**: Discover and join courses.
-- **Learning Progress**: Track completed materials and overall course progression.
-- **Social Interaction**: Real-time chat with teachers and peers, interactive commenting.
-- **Assessments**: Submit assignments and take timed quizzes.
-- **Notifications**: Stay updated with session alerts and grade releases.
+**E-Learning Platform** adalah sistem manajemen pembelajaran (LMS) modern yang dirancang untuk memfasilitasi interaksi antara Administrator, Guru, dan Siswa secara efisien. Dibangun dengan fokus pada kemudahan penggunaan, performa cepat, dan fitur kolaboratif yang lengkap.
 
 ---
 
-## 🛠️ Tech Stack
+## ⚡ Fitur Utama Berdasarkan Peran
 
-- **Backend**: [Laravel 10](https://laravel.com/)
-- **Frontend**: Blade, [Tailwind CSS](https://tailwindcss.com/)
-- **Authentication**: [Laravel Breeze](https://laravel.com/docs/10.x/starter-kits#laravel-breeze)
-- **Export Utility**: [Maatwebsite Excel](https://laravel-excel.com/)
+### 👨‍💼 Administrator (Control Center)
+- **Dashboard Overview**: Ringkasan statistik pengguna dan kursus aktif.
+- **User Management**: Kendali penuh untuk mengelola akun Guru dan Siswa.
+- **Course Monitoring**: Pengawasan seluruh aktivitas kursus di platform.
+- **Data Analytics**: Ekspor data pengguna dalam format Excel/CSV untuk pelaporan.
+
+### 👩‍🏫 Guru (Creative Learning)
+- **Course Mastery**: Kelola materi, tugas, dan ujian dengan antarmuka intuitif.
+- **Smart Engagement**: Fitur *Pin/Unpin* komentar pada materi untuk menyoroti diskusi penting.
+- **Automated Gradebook**: Pelacakan nilai otomatis yang bisa diekspor langsung ke Excel.
+- **Dynamic Leaderboard**: Visualisasi peringkat siswa berdasarkan performa akademik.
+- **Attendance Tracker**: Manajemen kehadiran siswa di setiap sesi materi.
+
+### 👨‍🎓 Siswa (Interactive Study)
+- **Course Explorer**: Telusuri dan daftar ke berbagai kursus yang tersedia.
+- **Progress Tracking**: Visualisasi kemajuan belajar secara *realtime* untuk setiap materi.
+- **Realtime Collaboration**: Fitur chat langsung dengan guru dan teman sekelas.
+- **Assessment Center**: Kerjakan tugas dan kuis interaktif dengan umpan balik cepat.
+- **Smart Notifications**: Pemberitahuan otomatis untuk tugas baru dan pengumuman kursus.
+
+---
+
+## 🛠️ Tech Stack & Dependencies
+
+- **Framework**: [Laravel 10](https://laravel.com/)
+- **Frontend**: [Tailwind CSS](https://tailwindcss.com/) & Blade Templating
+- **Starter Kit**: [Laravel Breeze](https://laravel.com/docs/10.x/starter-kits#laravel-breeze) (for Auth)
+- **Excel Module**: [Maatwebsite Excel](https://laravel-excel.com/) (for Reporting)
 - **Database**: MySQL / PostgreSQL
+- **Realtime**: Pusher / WebSocket Integration Ready
 
 ---
 
-## 🚀 Installation Guide
+## 📋 Prasyarat Sistem
 
-Follow these steps to set up the project locally:
+Pastikan environment Anda sudah memiliki:
+1. **PHP v8.1+**
+2. **Composer** (Dependency Manager)
+3. **Node.js & npm** (Frontend Build Tool)
+4. **MySQL Database Server**
 
-1. **Clone the repository**
+---
+
+## ⚙️ Cara Instalasi (Langkah Demi Langkah)
+
+Ikuti langkah sukses ini untuk menjalankan proyek di lokal:
+
+1. **Clone Repository**
    ```bash
    git clone https://github.com/SinggihHakim/e-learning.git
    cd e-learning
    ```
 
-2. **Install dependencies**
+2. **Setup Backend (PHP)**
    ```bash
    composer install
-   npm install && npm run build
    ```
+   - Copy file `.env.example` ke `.env`
+   - Konfigurasi database di `.env` (`DB_DATABASE`, `DB_USERNAME`, `DB_PASSWORD`)
+   - Generate App Key:
+     ```bash
+     php artisan key:generate
+     ```
 
-3. **Configure Environment**
-   - Copy `.env.example` to `.env`
-   - Set your database credentials (`DB_DATABASE`, `DB_USERNAME`, `DB_PASSWORD`)
-   - Generate application key:
+3. **Setup Frontend (JavaScript)**
    ```bash
-   php artisan key:generate
+   npm install
+   npm run build
    ```
 
-4. **Run Migrations & Seeders**
+4. **Migrasi Database & Seeding**
+   Jalankan perintah ini untuk membuat struktur tabel dan mengisi data contoh:
    ```bash
    php artisan migrate --seed
    ```
 
-5. **Start the application**
+5. **Jalankan Aplikasi**
    ```bash
    php artisan serve
    ```
+   Akses di: `http://localhost:8000`
 
 ---
 
-## 📸 Screenshots
-*(Add your screenshots here)*
+## ⚠️ Troubleshooting (Masalah Umum)
+
+**Q: Database tidak terdeteksi saat `migrate`?**
+* **Solusi**: Pastikan database server (XAMPP/MySQL) sudah menyala dan nama database di `.env` sudah sesuai (default: `lms`).
+
+**Q: Gambar atau file tidak muncul?**
+* **Solusi**: Jalankan perintah symlink storage:
+  ```bash
+  php artisan storage:link
+  ```
+
+**Q: CSS atau JS tidak terbaca?**
+* **Solusi**: Pastikan Anda sudah menjalankan `npm run build` atau gunakan `npm run dev` saat pengembangan.
 
 ---
 
-## 📄 License
+## 🤝 Kontribusi
 
-This project is open-sourced software licensed under the [MIT license](LICENSE).
+Selamat berkontribusi! Fork repo ini dan berikan Pull Request terbaik Anda.
+
+Dibuat dengan ❤️ oleh **Singgih Hakim**
