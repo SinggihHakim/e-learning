@@ -17,3 +17,26 @@ yarn-error.log
 /.fleet
 /.idea
 /.vscode
+
+# Custom Unimportant Files
+*.txt
+*.php
+!artisan
+!migrate_*.php
+!*.config.js
+/public/storage
+/storage/*.key
+/storage/logs/*
+/storage/framework/cache/data/*
+/storage/framework/views/*.php
+/storage/framework/sessions/*
+/storage/debugbar/
+
+# Exclude specific test scripts saw in root
+/clear_db.php
+/createdb.php
+/test.php
+/test_db.php
+/test_yt.php
+/test_yt2.php
+/translate_docs.php
