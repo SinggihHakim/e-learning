@@ -1,4 +1,4 @@
-# 🎓 E-Learning Platform (LMS) - Premium Laravel Edition 🚀
+# 🎓 E-Learning Platform (LMS) 
 
 ![Status](https://img.shields.io/badge/Status-Active-success)
 ![Laravel](https://img.shields.io/badge/Laravel-10-red)
