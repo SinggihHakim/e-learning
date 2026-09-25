@@ -8,6 +8,11 @@
 
 **E-Learning Platform** adalah sistem manajemen pembelajaran (LMS) modern yang dirancang untuk memfasilitasi interaksi antara Administrator, Guru, dan Siswa secara efisien. Dibangun dengan fokus pada kemudahan penggunaan, performa cepat, dan fitur kolaboratif yang lengkap.
 
+<img width="2513" height="1412" alt="image" src="https://github.com/user-attachments/assets/965393ad-35c3-4c80-8774-f65d26fbbde3" />
+<img width="2543" height="1399" alt="image" src="https://github.com/user-attachments/assets/89f24188-84a7-49db-b528-db70e6d64899" />
+<img width="2543" height="1401" alt="image" src="https://github.com/user-attachments/assets/29c8be95-2ca4-47fe-966c-f23936d9fa21" />
+
+
 ---
 
 ## ⚡ Fitur Utama Berdasarkan Peran
