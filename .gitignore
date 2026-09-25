@@ -24,6 +24,7 @@ yarn-error.log
 !artisan
 !migrate_*.php
 !*.config.js
+!**/*.blade.php
 /public/storage
 /storage/*.key
 /storage/logs/*
